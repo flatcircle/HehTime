@@ -1,6 +1,5 @@
 package io.flatcircle.hehtime
 
-import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.ArrayList
@@ -64,7 +63,7 @@ object HehTime {
                 // TODO: add logger/interceptor here?
             }
         }
-        //error?.let { throw it }
+        // error?.let { throw it }
         return Date()
     }
 
@@ -89,7 +88,6 @@ object HehTime {
             throw IllegalStateException("You must set the date pattern beforehand using addDateFormat")
         }
     }
-
 }
 
 /**
@@ -108,9 +106,9 @@ sealed class CommonDateFormat(val pattern: String) {
  * Commonly used time-elapsed units for calculating absolute-time differences.
  */
 sealed class TimeUnit(val milliseconds: Long) {
-    object Second: TimeUnit(1000L)
-    object Minute: TimeUnit(60000L)
-    object Hour: TimeUnit(3600000L)
-    object Day: TimeUnit(86400000L)
-    object Week: TimeUnit(604800000L)
+    object Second : TimeUnit(1000L)
+    object Minute : TimeUnit(60000L)
+    object Hour : TimeUnit(3600000L)
+    object Day : TimeUnit(86400000L)
+    object Week : TimeUnit(604800000L)
 }

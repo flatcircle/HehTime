@@ -20,7 +20,7 @@ WIP. Functions are currently accessed via the `HehTime` class.
 | Function: HehTime.  | Description | Example |
 | ------------- | ------------- | ------------- |
 | currentTime() | Returns the Current Time in millis according to your OS | [Example](https://github.com/flatcircle/hehtime/blob/master/app/src/main/java/io/flatcircle/hehtimeexample/MainActivity.kt#L24)  |
-| pparseStringIntoDate(date: String) | Returns a date, based on the given string. Must register a valid ISO8601Format pattern beforehand | [Example](https://github.com/flatcircle/hehtime/blob/master/app/src/main/java/io/flatcircle/hehtimeexample/MainActivity.kt#L24)  |
+| parseStringIntoDate(date: String) | Returns a date, based on the given string. Must register a valid ISO8601Format pattern beforehand | [Example](https://github.com/flatcircle/hehtime/blob/master/app/src/main/java/io/flatcircle/hehtimeexample/MainActivity.kt#L24)  |
 
 
 Icon obtained from [ShareIcon.net](https://www.shareicon.net/mythology-egyptian-god-heh-hieroglyph-744495)
